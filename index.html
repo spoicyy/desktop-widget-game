@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desktop Widget </title>
+    <style>
+        body {
+            background: transparent;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        #avatar {
+            width: 100%; /* Adjust the size of the avatar e*/
+            height: 100%; /* Adjust the size of the avatar */
+            background: url('avatar.png'); /* Path to your avatar image */
+            background-size: contain; /* Adjust the size of the avatar image */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="avatar">
+        <img id="avatar" src="avatar.png" style="width: 100%; height: 100%;">
+    </div>
+
+    <div id="customization-container">
+        <label> Skin:
+            <select id="skin-select">
+                <option value="skin1">1</option>
+                <option value="skin2">2</option>
+                <option value="skin3">3</option>
+                <option value="skin4">4</option>
+                <option value="skin5">5</option>
+                <option value="skin6">6</option>
+            </select>
+        </label>
+
+        <label> Hair:
+            <select id="hair-select">
+                <option value="hair1">1</option>
+                <option value="hair2">2</option>
+                <option value="hair3">3</option>
+                <option value="hair4">4</option>
+                <option value="hair5">5</option>
+                <option value="hair6">6</option>
+            </select>
+        </label>
+
+        <label> Clothes:
+            <select id="clothes-select">
+                <option value="clothes1">1</option>
+                <option value="clothes2">2</option>
+                <option value="clothes3">3</option>
+                <option value="clothes4">4</option>
+                <option value="clothes5">5</option>
+                <option value="clothes6">6</option>
+            </select>
+        </label>
+
+        <label> Eyes:
+            <select id="eyes-select">
+                <option value="eyes1">1</option>
+                <option value="eyes2">2</option>
+                <option value="eyes3">3</option>
+                <option value="eyes4">4</option>
+                <option value="eyes5">5</option>
+                <option value="eyes6">6</option>
+            </select>
+        </label>
+
+        <label> Accessories:
+            <select id="accessories-select">
+                <option value="accessories1">1</option>
+                <option value="accessories2">2</option>
+                <option value="accessories3">3</option>
+                <option value="accessories4">4</option>
+                <option value="accessories5">5</option>
+                <option value="accessories6">6</option>
+            </select>
+        </label>
+
+        <button id="save-avatar">Save Avatar</button>
+    </div>
+
+    <div id="timer">
+        <h2 id="timer-display">25:00</h2>
+        <button id="start-button">Start</button>
+        <button id="pause-button">Pause</button>
+        <button id="reset-button">Reset</button>
+    </div>
+    <script src="renderer.js"></script>
+    <div id="coin-container">
+        <span> (+) Coin: <span id="coin-count">0</span></span>
+    </div>"
+</body>
+</html>

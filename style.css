@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./assets/fonts/game_over.ttf') format('truetype');
+}
+body {
+    font-family: 'CustomFont', sans-serif;
+    font-size: 16px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#avatar {
+    width: 100%;
+    height: 100%;
+    -webkit-app-region: drag;
+    cursor: grab;
+    background: url('./avatar.png') no-repeat center;
+    background-size: contain;
+}
+
+#timer-container {
+    font: 'CustomFont', sans-serif;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    font: 'CustomFont', sans-serif;
+    margin: 5px;
+    padding: 5px 10px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff3b3b;
+}
+
+#coin-container {
+    font: 'CustomFont', sans-serif;
+    font-size: 18px;
+    color: gold;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#customization-container {
+    font: 'CustomFont', sans-serif;
+    background: blue;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+select, button {
+    font: 'CustomFont', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background: #ff3b3b;
+}
